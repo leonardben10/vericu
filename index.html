@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta name="viewport" content="widh=device-width, initial-scale=1.0">
+    <title>Garajul lui Varutu</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+      *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+      }
+      #btn{
+        width: 50px;
+        height: 25px;
+        border-width: 4px;
+        border-radius: 15px;
+        font-size: 25px;
+        font-weight: bold;
+        color: #f00;
+        cursor: pointer;
+      }
+      #btn:active{
+        font-size: 23px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn" onclick="play">Sunet</button>
+    <script type="text/javascript">
+      const audio = new Audio();
+      audio.src = "images/bmwsunet.mp3";
+    </script>
+    <div class="hero">
+
+<video autoplay loop plays-inline class="back-video">
+  <source src="images/bmw.mp4" type="video/mp4">
+</video>
+
+      <nav>
+        <img src="images/bmw.gif" class="logo">
+        <ul>
+          <li><a href="#">ACASA</a></li>
+          <li><a href="#">PIESE</a></li>
+          <li><a href="#">SERVICE</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h1>BMW</h1>
+        <a href="#">Explore</a>
+      </div>
+    </div>
+
+  </body>
+</html>
